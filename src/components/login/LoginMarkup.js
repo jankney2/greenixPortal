@@ -1,14 +1,28 @@
-import React from 'react';
+import React from "react";
 
+const LoginMarkup = props => {
+  return (
+    <div>
+      <input
+        type="email"
+        placeholder="email"
+        onChange={e => {
+          props.updateEmail(e.target.value);
+        }}
+      />
+      <input
+        type="password"
+        placeholder="password"
+        onChange={e => {
+          props.updatePass(e.target.value);
+        }}
+      />
 
-const LoginMarkup= (props)=>{
+        <button onClick={()=>{
+         props.submitLogin()   
+        }}>login</button>
+    </div>
+  );
+};
 
-    return (
-<div>
-
-<input type='text'/>
-</div>
-    )
-}
-
-export default LoginMarkup
+export default LoginMarkup;

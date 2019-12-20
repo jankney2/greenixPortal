@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import LoginMarkup from "./LoginMarkup";
 
-const LoginLogic= ()=>{
+import {withRouter} from 'react-router-dom'
+ 
+const LoginLogic= (props)=>{
 const [emailVal, updateEmail]=useState('')
 const [passVal, updatePass]=useState('')
 const submitLogin=()=>{
+    props.history.push('/home')
     console.log('submitted', emailVal, passVal)
 }
 
@@ -19,4 +22,4 @@ const submitLogin=()=>{
     )
 }
 
-export default LoginLogic
+export default withRouter(LoginLogic)

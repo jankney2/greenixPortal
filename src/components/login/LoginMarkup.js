@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginMarkup = props => {
   return (
-    <div>
+    <div className='loginWindow'>
       <input
         type="email"
         placeholder="email"
@@ -18,9 +18,13 @@ const LoginMarkup = props => {
         }}
       />
 
-        <button onClick={()=>{
-         props.submitLogin()   
-        }}>login</button>
+      <button
+        onClick={() => {
+          props.submitLogin();
+        }}
+      >
+        login
+      </button>
     </div>
   );
 };

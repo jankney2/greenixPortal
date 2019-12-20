@@ -2,14 +2,14 @@ import React from 'react'
 
 
 
-const Login=()=>{
+const HomeView=()=>{
     return(
         <div>
 
-            Login!
+            HomeView!
         </div>
     )
 }
 
 
-export default Login
+export default HomeView

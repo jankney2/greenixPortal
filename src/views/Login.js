@@ -1,13 +1,11 @@
 import React from 'react'
+import LoginWrapper from '../components/login/LoginWrapper'
 
 
 
 const Login=()=>{
     return(
-        <div>
-
-            Login!
-        </div>
+        <LoginWrapper />
     )
 }
 
